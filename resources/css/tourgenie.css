@@ -1,0 +1,228 @@
+.intro-divider {
+    width: 450px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin-left: -10px;
+    color: #c8c8c8;
+}
+.intro-divider {
+    width: 100%;
+}
+
+a.page-topic:hover{
+    color: #b31d14;
+    background-color: #b31d14;
+}
+
+.btn-box{
+    padding-top:160px;
+    margin:auto;
+}
+
+#map{
+    margin-top: 150px;
+    margin-left: 50px;
+    padding-top: 150px;
+    width: 600px;
+    height: 400px;
+    background-color: #5bc0de;
+}
+
+#myPlacesMap{
+    margin-top: 0px;
+    margin-left: 50px;
+    padding-top: 150px;
+    width: 600px;
+    height: 575px;
+    background-color: #5bc0de;
+}
+
+#myPlacesMapView{
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+#myPlacesResults{
+    position: relative;
+    z-index: 2;
+}
+
+#photoContainer img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.venueName h2{
+    margin-top: 0;
+    font-size: 1.2em;
+    text-transform: none;
+}
+
+.venue{
+    margin-bottom: 15px;
+}
+
+.venue hr{
+    width: 120%;
+}
+
+#infoContainer{
+    margin-bottom: 30px;
+}
+
+.home-box{
+    background: rgba(255,255,255,0.4);
+    padding-left: 15px;
+}
+
+.loc-info {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    padding-top: 50px;
+    color: #fff;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.loc-info .loc-info-flag {
+    width: auto;
+    margin-right: 10px;
+    margin-top: -5px;
+}
+.loc-info .loc-info-weather {
+    margin: 0;
+}
+.loc-info .loc-info-weather-icon {
+    font-size: 60px;
+    margin-left: 5px;
+}
+.loc-info .loc-info-weather-num {
+    font-size: 30px;
+    position: relative;
+    top: -15px;
+}
+
+.mbr-arrow{
+    bottom: 71px;
+    left: 0;
+    line-height: 1px;
+    padding: 0 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+.mbr-arrow__link {
+    display: inline-block;
+    font-size: 26px;
+}
+.mbr-arrow__link,
+.mbr-arrow__link:hover,
+.mbr-arrow__link:focus {
+    color: #fff;
+}
+.mbr-arrow--floating .mbr-arrow__link {
+    -webkit-animation: floating-arrow 1.6s infinite ease-in-out 0s;
+    -o-animation: floating-arrow 1.6s infinite ease-in-out 0s;
+    animation: floating-arrow 1.6s infinite ease-in-out 0s;
+}
+@-webkit-keyframes floating-arrow {
+    from {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    65% {
+        -webkit-transform: translateY(11px);
+        transform: translateY(11px);
+    }
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@-o-keyframes floating-arrow {
+    from {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    65% {
+        -webkit-transform: translateY(11px);
+        transform: translateY(11px);
+    }
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes floating-arrow {
+    from {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    65% {
+        -webkit-transform: translateY(11px);
+        transform: translateY(11px);
+    }
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+.mbr-arrow--dark .mbr-arrow__link,
+.mbr-arrow--dark .mbr-arrow__link:hover,
+.mbr-arrow--dark .mbr-arrow__link:focus {
+    color: #252525;
+}
+@media (max-width: 767px) {
+    .mbr-arrow {
+        bottom: 41px;
+    }
+}
+@media (max-width: 320px) {
+    .mbr-arrow {
+        bottom: 21px;
+        text-align: center;
+    }
+}
+@media all and (device-width: 320px) and (device-height: 568px) and (orientation: portrait) {
+    .mbr-arrow {
+        bottom: 31px;
+    }
+}
+.mbr-section__container {
+    padding: 0;
+    position: relative;
+    z-index: 3;
+}
+.mbr-section__container--std-padding {
+    padding: 93px 0;
+}
+.mbr-section__container--sm-padding {
+    padding: 41px 0;
+}
+.mbr-section__container--isolated {
+    padding-bottom: 93px;
+    padding-top: 93px;
+}
+.mbr-section__container--first {
+    padding-top: 93px;
+    padding-bottom: 41px;
+}
+.mbr-section__container--middle {
+    padding-bottom: 41px;
+}
+.mbr-section__container--last {
+    padding-bottom: 93px;
+}

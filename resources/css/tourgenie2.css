@@ -1,0 +1,290 @@
+.navbar-default{
+    background-color: #1093a7;
+    border-color: #1093a7;
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.btn-default{
+    font-size: 15px;
+}
+
+.searchbar{
+    min-height: 45px;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    top: 50px;
+    z-index: 1000000;
+    background: #42c4d6; /*0ac898*/
+}
+
+.body{
+    background-color: #ffffff;
+}
+
+#container{
+    border: none;
+    width: 100%;
+}
+
+#map{
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+}
+
+#map2{
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+}
+
+#myPlacesMapView{
+    bottom: 0;
+    right: 0;
+    left: 700px;
+    top: 110px;
+    position: fixed;
+    z-index: 1;
+}
+
+#contentView{
+    position: relative;
+    width: 700px;
+    z-index: 2;
+}
+
+#selector{
+    width: 700px;
+    height: 50px;
+    z-index: 1000000;
+    top: 110px;
+    padding-left: 30px;
+    padding-top: 7px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #c5c7c9;
+    background: #e1e5e8;
+}
+
+#photoContainer{
+    width: 180px;
+    height: 180px;
+    float: left;
+}
+
+#photoContainer img{
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+#infoContainer{
+    float: left;
+    padding-left: 20px;
+    width: 450px;
+}
+
+.placeName h3{
+    margin-top: 0;
+    font-size: 1.5em;
+    text-transform: none;
+}
+
+.placeName h3 a{
+    color: #125ed1;
+}
+
+.placeName h3 a:hover{
+    color: #42c4d6;
+    text-decoration: underline;
+}
+
+.placeType p{
+    padding-bottom: 4px;
+    margin-bottom: 0;
+    color: #9b9090;
+    font-style: italic;
+}
+
+.placeLocation p{
+    color: #9b9090;
+}
+
+.placeDistance p{
+    color: #3d3737;
+}
+
+.placeDate p{
+    color: #3d3737;
+}
+
+.placeDescription p{
+    margin-top: 20px;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.placeDescription ::-webkit-scrollbar{
+    width: 10px;
+}
+
+.placeDescription ::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 8px;
+}
+
+.placeDescription ::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px 0 rgba(0,0,0,0.5);
+}
+
+.placeView{
+    margin: 0;
+    padding: 20px 0 20px 40px;
+    border-bottom: 1px solid #c5c7c9;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+#resultView{
+    position: relative;
+    z-index: 50;
+    top: 120px;
+    margin: 0;
+}
+
+.userRating{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: #00b551;
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    padding-top: 5px;
+    border-radius: 5px;
+    float: right;
+    cursor: default;
+}
+
+#locationPhoto{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    float: left;
+}
+
+#locationPhoto img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    float: left;
+}
+
+#locationInfo{
+    float: left;
+    padding-left: 20px;
+    width: 330px;
+}
+
+.singleplaceView{
+    margin: 0;
+    padding: 20px 0 20px 40px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.buttonOptions{
+    padding-top: 10px;
+}
+
+.tourDescription p{
+    width: 450px;
+    padding-bottom: 4px;
+    margin-bottom: 0;
+    color: #9b9090;
+}
+
+.tourPlaces p{
+    color: #3d3737;
+}
+
+.modal{
+    z-index: 2000000;
+}
+
+.modal-dialog{
+    width: 450px;
+}
+
+.modal-body{
+    padding: 30px;
+}
+
+.controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pac-input {
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 350px;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+.pac-container {
+    z-index: 2000000 !important;
+    width: 350px;
+}
+
+.pac-item {
+    height: 35px;
+    font-size: 12px;
+    color: #101010;
+}
+
+#autocomplete {
+    height: 35px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+#errorBox{
+    background-color: #d43f3a;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #e5e5e5;
+    text-align: center;
+}

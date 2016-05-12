@@ -1,0 +1,59 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: MalshaL
+ * Date: 5/3/2016
+ * Time: 2:18 PM
+ */
+
+class User
+{
+    private $user_id;
+    private $username;
+    private $password;
+    private $email;
+
+    public function set_user_id($user_id)
+    {
+        $this->user_id = $user_id;
+
+    }
+
+    public function get_user_id()
+    {
+        return $this->user_id;
+    }
+
+    public function set_username($username)
+    {
+        $this->username = $username;
+
+    }
+
+    public function get_username()
+    {
+        return $this->username;
+    }
+
+    public function set_password($password)
+    {
+        $this->password = $password;
+
+    }
+
+    public function get_password()
+    {
+        return $this->password;
+    }
+
+    public function set_email($email)
+    {
+        $this->email = $email;
+
+    }
+
+    public function get_email()
+    {
+        return $this->email;
+    }
+}
