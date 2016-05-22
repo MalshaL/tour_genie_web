@@ -1,9 +1,4 @@
-<!--/**
- * Created by PhpStorm.
- * User: MalshaL
- * Date: 4/21/2016
- * Time: 11:49 PM
- */-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,9 +6,7 @@
     <?php include '../templates/css.php';
     error_reporting(E_ERROR);
     ?>
-    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&language=en"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP6BFWsxWoI9Ep8bHeo4bwlY0mfpRSesw&callback=initMap&sensor=true" async defer></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQwtY14UCzaIsy6mz39GCXAN3E7a1NYtk&libraries=places&callback=initMap" async defer></script>
+
     <script>
         var pos;
         var mylocation;
@@ -75,11 +68,11 @@
                 </div>
             </div>
             <div id="resultView" class="singleplaceView">
-                <div id="locationPhoto">
+                <div id="locationPhoto" class="locationPhoto">
                     <img id="locationPhotoBox">
                 </div>
                 <div id="locationInfo">
-                    <div class="userRating">9</div>
+                    <div class="userRating" id="userRating"></div>
                     <div class="placeType" style="padding-top: 30px">
                         <p><i id="placeTypeBox"></i></p>
                     </div>
@@ -94,6 +87,8 @@
                     <div class="placeDescription">
                         <p id="placeDescriptionBox"></p>
                     </div>
+                    <div id="placeLat" style="visibility: hidden"></div>
+                    <div id="placeLong" style="visibility: hidden"></div>
                     <!--div class="buttonOptions">
                         <a href="#" class="btn btn-default"><i class="fa fa-volume-up"></i> Read aloud</a>
                     </div-->
@@ -107,7 +102,10 @@
 </main>
 
 <?php include '../templates/js.php' ?>
-<script src="../resources/js/currentLocation.js"></script>
+<script src="../model/data_access/currentLocation.js"></script>
 <script>document.onload = initMap()</script>
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places&language=en"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP6BFWsxWoI9Ep8bHeo4bwlY0mfpRSesw&callback=initMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQwtY14UCzaIsy6mz39GCXAN3E7a1NYtk&libraries=places&callback=initMap&language=en" async defer></script>
 </body>
 </html>

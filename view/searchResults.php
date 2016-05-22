@@ -11,10 +11,7 @@
     <?php include '../templates/css.php';
     error_reporting(E_ERROR);
     ?>
-    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&language=en"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP6BFWsxWoI9Ep8bHeo4bwlY0mfpRSesw&callback=initMap&sensor=true" async defer></script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQwtY14UCzaIsy6mz39GCXAN3E7a1NYtk&libraries=places&callback=initMap" async defer></script>
+
     <script>
         var pos;
         var mylocation;
@@ -39,7 +36,7 @@
     </script>
 </head>
 
-<body onload="initAutocomplete(), initMap2()">
+<body onload="initAutocomplete()">
 <header>
     <?php include '../templates/header.php';
     error_reporting(E_ERROR);
@@ -49,11 +46,11 @@
 <main>
     <div id="container">
         <div id="contentView">
-            <div class="col-md-12" id="selector">
+            <div class="col-md-12" id="selectorSearch">
                 <div class="col-md-9">
-                    <p style="margin-top: 10px" id="selectedText">Showing places to <b id="selectedType"></b> near <b id="selectedLocation"></b></p>
+                    <p style="margin-top: 10px" id="selectedText">Showing places to <b id="selectedType"></b><br>near <b id="selectedLocation"></b></p>
                 </div>
-                <div class="col-md-3" style="padding-left: 0px">
+                <div class="col-md-3" style="padding-left: 0px; padding-top: 15px">
                     <div class="input-group">
                         <div class="input-group-btn">
                             <button type="button" class="btn btn-default dropdown-toggle"
@@ -76,17 +73,30 @@
 
                 </ul>
             </div>
+            <div id="lat" style="visibility: hidden"></div>
+            <div id="lng" style="visibility: hidden"></div>
         </div>
         <div id="myPlacesMapView">
             <div id="map"></div>
         </div>
     </div>
 </main>
-<script>document.onload = initMap2()</script>
 <?php include '../templates/js.php' ?>
-<script src="../resources/js/searchResults.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP6BFWsxWoI9Ep8bHeo4bwlY0mfpRSesw" async defer></script>
-<script src="https://maps.googleapis.com/maps/api/js" async defer></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQwtY14UCzaIsy6mz39GCXAN3E7a1NYtk&libraries=places" async defer></script>
+<script src="../model/data_access/searchResults.js"></script>
+<script>document.onload = initMap2()</script>
+<script>function getSelectedVal() {
+        $("#dropdownBox").find("li").click(function () {
+            var type = this.id;
+            var loc = document.getElementById("selectedLocation").innerHTML;
+            var lat = document.getElementById("lat").innerHTML;
+            var lng = document.getElementById("lng").innerHTML;
+
+            document.location.href = 'searchResults.php?l=' + loc + '&t=' + type + '&lt=' + lat + '&lg=' + lng;
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places&language=en"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP6BFWsxWoI9Ep8bHeo4bwlY0mfpRSesw&callback=initMap2" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQwtY14UCzaIsy6mz39GCXAN3E7a1NYtk&libraries=places&callback=initMap2&language=en" async defer></script>
 </body>
 </html>
