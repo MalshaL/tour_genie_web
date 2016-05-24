@@ -35,6 +35,7 @@
             });
         }
     </script>
+
 </head>
 
 <body onload="initAutocomplete()" background="../resources/images/back2.jpg">
@@ -43,13 +44,13 @@
     error_reporting(E_ERROR);
     ?>
 </header>
-
 <main>
     <div class="container"
          style="text-align: center; align-items: center; padding-top: 20%; font-size: 32px; color: #000;">
         <p> Look for places near you..</p>
         <a type="button" class="btn btn-default btn-lg" id="locationBtn" href="currentLocation.php"><b>Enable Location
                 Services</b></a>
+
     </div>
 </main>
 

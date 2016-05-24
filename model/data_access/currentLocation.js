@@ -54,13 +54,15 @@ function initMap() {
                                     }, function (place, stat) {
                                         if (stat == google.maps.places.PlacesServiceStatus.OK) {
                                             var name = place.name;
-                                            var type = place.types[0];
+                                            var type = place.types[0].replace(/_/g, " ");
+                                            type = type.charAt(0).toUpperCase()+type.slice(1);
                                             var searchQ = place.vicinity;
                                             document.getElementById("selectedLocation").innerHTML = name;
                                             document.getElementById("placeTypeBox").innerHTML = type;
                                             document.getElementById("placeLocationBox").innerHTML = address_main;
                                             document.getElementById("placeLat").innerHTML = pos.lat;
                                             document.getElementById("placeLong").innerHTML = pos.lng;
+                                            document.getElementById("place_id").innerHTML = placeID;
 
                                             var thisRating = place.rating;
                                             if (thisRating != undefined) {
@@ -79,7 +81,12 @@ function initMap() {
                                                 infowindow.close();
                                             });
 
-                                            document.getElementById("locationPhotoBox").src = "https://maps.googleapis.com/maps/api/streetview?size=300x300&location=" + pos.lat + "," + pos.lng + "&heading=180&key=AIzaSyDQwtY14UCzaIsy6mz39GCXAN3E7a1NYtk";
+                                            if (place.photos != undefined) {
+                                                document.getElementById("locationPhotoBox").src = place.photos[0].getUrl({'maxWidth': 300, 'maxHeight': 300});
+                                            }
+                                            else {
+                                                document.getElementById("locationPhotoBox").src = "https://maps.googleapis.com/maps/api/streetview?size=300x300&location=" + pos.lat + "," + pos.lng + "&heading=180&key=AIzaSyDQwtY14UCzaIsy6mz39GCXAN3E7a1NYtk";
+                                            }
 
                                             var service_url = 'https://kgsearch.googleapis.com/v1/entities:search';
                                             var params = {
@@ -99,70 +106,13 @@ function initMap() {
                                         }
                                     }
                                 );
-                                // }
-                                /*else {
-                                 var town;
-                                 for (i = 0; i < 3; i++) {
-                                 var comp = location.address_components[i];
-                                 if (comp.types[0] == "locality") {
-                                 town = comp.long_name;
-                                 }
-                                 }
-                                 document.getElementById("selectedLocation").value = "jjjj";
-                                 document.getElementById("placeTypeBox").value = "City";
-                                 alert("----"+town+"----");
-
-                                 google.maps.event.addListener(marker, 'mouseover', function () {
-                                 infowindow.setContent('You\'re here:  <div><strong>' + town + '</strong></div>');
-                                 infowindow.open(map, this);
-                                 });
-                                 google.maps.event.addListener(marker, 'mouseout', function () {
-                                 infowindow.close();
-                                 });
-
-
-                                 /!*var obj;
-                                 if (window.XMLHttpRequest) {
-                                 obj = new XMLHttpRequest();
-                                 } else if (window.ActiveXObject) {
-                                 obj = new ActiveXObject("Microsoft.XMLHTTP");
-                                 } else {
-                                 alert("Browser Doesn't Support AJAX!");
-                                 }
-
-                                 if (town !== "undefined") {
-                                 if (obj !== null) {
-                                 obj.onreadystatechange = function () {
-                                 if (obj.readyState < 4) {
-                                 // progress
-                                 } else if (obj.readyState === 4) {
-                                 var res = obj.responseText;
-                                 var opt1 = JSON.parse(res)[0].name;
-                                 var opt2 = JSON.parse(res)[0].description;
-                                 var opt3 = JSON.parse(res)[0].no_of_visitors;
-                                 var opt4 = JSON.parse(res)[0].image;
-
-                                 document.getElementById("placeDescriptionBox").value = opt2;
-                                 document.getElementById("userRating").value = opt3;
-                                 }
-                                 }
-
-                                 obj.open("GET", "../model/data_access/GetCity.php?town=" + encodeURIComponent(town), true);
-                                 //obj.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-                                 obj.send();
-
-                                 }
-                                 }
-                                 *!/
-                                 }*/
                             }
                             else {
                                 alert("address not found");
                             }
                         }
                         else {
-                            //document.getElementById("location").innerHTML="Geocoder failed due to: " + status;
-                            //alert("Geocoder failed due to: " + status);
+
                         }
                     }
                 )
@@ -184,4 +134,25 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
     infoWindow.setContent(browserHasGeolocation ?
         'Error: The Geolocation service failed.' :
         'Error: Your browser doesn\'t support geolocation.');
+}
+
+function saveCurrLoc(){
+    var p_id = document.getElementById("place_id").innerHTML;
+    var u_id = document.getElementById("u_id").innerHTML;
+    var id = "saveBtn";
+    var xmlhttp;
+    if (window.XMLHttpRequest){
+        xmlhttp = new XMLHttpRequest();
+    } else{
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange = function () {
+        if(xmlhttp.readyState==4 &&xmlhttp.status==200){
+            document.getElementById(id).setAttribute("disabled","disabled");
+        }
+    };
+
+    xmlhttp.open("GET","/TourGenie/controller/saveController.php?p_id="+p_id+"&u_id="+u_id, true);
+    //xmlhttp.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+    xmlhttp.send();
 }

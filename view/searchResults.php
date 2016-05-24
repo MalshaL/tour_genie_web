@@ -11,6 +11,8 @@
     <?php include '../templates/css.php';
     error_reporting(E_ERROR);
     ?>
+    <?php include '../model/data_access/SaveModel.php';
+    include '../model/Entity/SavedPlace.php'; ?>
 
     <script>
         var pos;

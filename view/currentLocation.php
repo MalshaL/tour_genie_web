@@ -6,6 +6,8 @@
     <?php include '../templates/css.php';
     error_reporting(E_ERROR);
     ?>
+    <?php include '../model/data_access/SaveModel.php';
+    include '../model/Entity/SavedPlace.php'; ?>
 
     <script>
         var pos;
@@ -80,15 +82,24 @@
                         <p id="placeLocationBox"></p>
                     </div>
                     <div class="buttonOptions">
-                        <a href="#" class="btn btn-default"><i class="fa fa-check-circle"></i> Check in</a>
-                        <a href="#" class="btn btn-default"><i class="fa fa-plus-circle"></i> Add to tour</a>
-                        <a href="#" class="btn btn-default"><i class="fa fa-bookmark"></i> Save</a>
+                        <a href="#" class="btn btn-default" id="checkinBtn"><i class="fa fa-check-circle"></i> Check in</a>
+                        <a href="#" class="btn btn-default" id="tourBtn"><i class="fa fa-plus-circle"></i> Add to tour</a>
+                        <a href="#" class="btn btn-default" id="saveBtn" onclick="saveCurrLoc()"><i class="fa fa-bookmark"></i> Save</a>
                     </div>
+                    <script>
+                        var u_id = document.getElementById("u_id").innerHTML;
+                        if (u_id == 'null') {
+                            document.getElementById("saveBtn").setAttribute('disabled', 'disabled');
+                            document.getElementById("tourBtn").setAttribute('disabled', 'disabled');
+                            document.getElementById("checkinBtn").setAttribute('disabled', 'disabled');
+                        }
+                    </script>
                     <div class="placeDescription">
                         <p id="placeDescriptionBox"></p>
                     </div>
                     <div id="placeLat" style="visibility: hidden"></div>
                     <div id="placeLong" style="visibility: hidden"></div>
+                    <div id="place_id" style="visibility: hidden"></div>
                     <!--div class="buttonOptions">
                         <a href="#" class="btn btn-default"><i class="fa fa-volume-up"></i> Read aloud</a>
                     </div-->

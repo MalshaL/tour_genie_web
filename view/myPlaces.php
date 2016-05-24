@@ -48,46 +48,6 @@
                             </div>
                         </div>
                     </li>
-                    <li class="placeView">
-                        <div id="photoContainer">
-                            <img src="../resources/images/1.jpg">
-                        </div>
-                        <div id="infoContainer">
-                            <div class="userRating">9</div>
-                            <div class="placeName">
-                                <h3><a href="">Shanghai Terrace</a></h3>
-                            </div>
-                            <div class="placeType">
-                                <p><i>Restaurant</i></p>
-                            </div>
-                            <div class="placeLocation">
-                                <p>Sri Jayawardenepura Kotte</p>
-                            </div>
-                            <div class="buttonOptions">
-                                <a href="#" class="btn btn-default"><i class="fa fa-crosshairs"></i> Remove</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="placeView">
-                        <div id="photoContainer">
-                            <img src="../resources/images/1.jpg">
-                        </div>
-                        <div id="infoContainer">
-                            <div class="userRating">9</div>
-                            <div class="placeName">
-                                <h3><a href="">Shanghai Terrace</a></h3>
-                            </div>
-                            <div class="placeType">
-                                <p><i>Restaurant</i></p>
-                            </div>
-                            <div class="placeLocation">
-                                <p>Sri Jayawardenepura Kotte</p>
-                            </div>
-                            <div class="buttonOptions">
-                                <a href="#" class="btn btn-default"><i class="fa fa-crosshairs"></i> Remove</a>
-                            </div>
-                        </div>
-                    </li>
                 </ul>
             </div>
         </div>

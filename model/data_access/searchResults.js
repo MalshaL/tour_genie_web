@@ -5,8 +5,6 @@
 var map;
 var infowindow;
 
-
-
 function getUrlVars() {
     var pairs = {};
     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
@@ -61,7 +59,7 @@ function initMap2(){
                 var ul = document.getElementById("resultListBox");
                 for (var i = 0; i < results.length; i++) {
                     createMarker(results[i]);
-                    //alert('A');
+                    var p_id = results[i].place_id;
                     var newLi = document.createElement("LI");                    //new list item
                     newLi.setAttribute("class", "placeView");
 
@@ -98,7 +96,7 @@ function initMap2(){
                     placeName.setAttribute("class", "placeName");
                     var h3 = document.createElement("H3");
                     var link = document.createElement("A");                      //place name
-                    link.setAttribute("href", "../view/detailedLocation.php?n="+results[i].name+"&id="+results[i].placeId);
+                    link.setAttribute("href", "../view/detailedLocation.php?n="+results[i].name+"&id="+p_id);
                     link.appendChild(document.createTextNode(results[i].name));
                     h3.appendChild(link);
                     placeName.appendChild(h3);
@@ -106,19 +104,41 @@ function initMap2(){
 
                     var placeType = document.createElement("DIV");                 //place type
                     placeType.setAttribute("class", "placeType");
-                    placeType.appendChild(document.createElement("P").appendChild(document.createTextNode(results[i].types[0])));
+                    var type = results[i].types[0].replace(/_/g, " ");
+                    type = type.charAt(0).toUpperCase()+type.slice(1);
+                    placeType.appendChild(document.createElement("P").appendChild(document.createTextNode(type)));
                     infoDiv.appendChild(placeType);
+
+
 
                     var placeLocation = document.createElement("DIV");               //place type
                     placeLocation.setAttribute("class", "placeLocation");
                     placeLocation.appendChild(document.createElement("P").appendChild(document.createTextNode(results[i].vicinity)));
                     infoDiv.appendChild(placeLocation);
 
-                    var btn = document.createElement("BUTTON");        // button
-                    var t = document.createTextNode("Save");
+                    var btnDiv = document.createElement("DIV");
+                    btnDiv.setAttribute("class", "buttonOptions");
+                    var btn = document.createElement("A");        // button
+                    btn.setAttribute("class", "btn btn-default");
+                    btn.setAttribute("id","btn"+i);
+                    var icon = document.createElement("I");
+                    icon.setAttribute("class","fa fa-bookmark");
+                    btn.appendChild(icon);
+                    var t = document.createTextNode(" Save");
                     btn.appendChild(t);
-                    /*btn.onclick = savePlace();*/
-                    infoDiv.appendChild(btn);
+                    var u_id = document.getElementById("u_id").innerHTML;
+                    if(u_id!='null'){
+                        btn.setAttribute("p_id",p_id);
+                        btn.setAttribute("u_id",u_id);
+                        btn.onclick = function(){
+                            savePlace(this.getAttribute("p_id"), this.getAttribute("u_id"), this.getAttribute("id"));
+                        }
+                    }
+                    else{
+                        btn.setAttribute('disabled','disabled');
+                    }
+                    btnDiv.appendChild(btn);
+                    infoDiv.appendChild(btnDiv);
 
                     newLi.appendChild(infoDiv);
                     ul.appendChild(newLi);
@@ -157,4 +177,22 @@ function getType(type){
     if(type=='shop'){ return 'store'}
     if(type=='visit'){ return 'park'}
     if(type=='fuel'){ return 'gas_station'}
+}
+
+function savePlace(p_id, u_id, id){
+    var xmlhttp;
+    if (window.XMLHttpRequest){
+        xmlhttp = new XMLHttpRequest();
+    } else{
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange = function () {
+        if(xmlhttp.readyState==4 &&xmlhttp.status==200){
+            document.getElementById(id).setAttribute("disabled","disabled");
+        }
+    };
+
+    xmlhttp.open("GET","/TourGenie/controller/saveController.php?p_id="+p_id+"&u_id="+u_id, true);
+    //xmlhttp.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+    xmlhttp.send();
 }

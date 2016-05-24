@@ -35,11 +35,13 @@ include '../model/data_access/SignUpModel.php';
                 <?php
                 $url = $_SERVER['REQUEST_URI'];
                 if (isset($_SESSION["logged_in"])) {
+                    echo '<li style="visibility: hidden" id="u_id">'.$_SESSION['id'].'</li>';
                     echo '<li><a href="myHistory.php">My History</a></li>';
                     echo '<li><a href="myPlaces.php">My Places</a></li>';
                     echo '<li><a href="myTours.php">My Tours</a></li>';
                     echo '<li><a href="../controller/Logout.php?url=' . $url . '">Log Out</a></li>';
                 } else {
+                    echo '<li style="visibility: hidden" id="u_id">null</li>';
                     echo '<li><a href="#" data-toggle="modal" data-target="#loginModal">Log In</a></li>';
                     echo '<li><a href="#" data-toggle="modal" data-target="#signupModal">Sign In</a></li>';
                 } ?>
