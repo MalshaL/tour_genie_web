@@ -37,6 +37,7 @@ function initMap2(){
     var latlng = new google.maps.LatLng(pos.lat, pos.lng);
     //alert(pos.lng);
     infowindow = new google.maps.InfoWindow();
+
     var service = new google.maps.places.PlacesService(map);
     service.nearbySearch({
         location: latlng,
@@ -67,8 +68,6 @@ function initMap2(){
                     photoDiv.setAttribute("id", "photoContainer");
 
                     var img = document.createElement("IMG");                    //photo
-
-
                     if (results[i].photos != undefined) {
                         img.setAttribute("src", results[i].photos[0].getUrl({'maxWidth': 180, 'maxHeight': 180}));
                     }
@@ -108,8 +107,6 @@ function initMap2(){
                     type = type.charAt(0).toUpperCase()+type.slice(1);
                     placeType.appendChild(document.createElement("P").appendChild(document.createTextNode(type)));
                     infoDiv.appendChild(placeType);
-
-
 
                     var placeLocation = document.createElement("DIV");               //place type
                     placeLocation.setAttribute("class", "placeLocation");
@@ -156,7 +153,7 @@ function initMap2(){
 }
 
 function createMarker(place) {
-    var placeLoc = place.geometry.location;
+    //var placeLoc = place.geometry.location;
     var marker = new google.maps.Marker({
         map: map,
         position: place.geometry.location
@@ -192,7 +189,7 @@ function savePlace(p_id, u_id, id){
         }
     };
 
-    xmlhttp.open("GET","/TourGenie/controller/saveController.php?p_id="+p_id+"&u_id="+u_id, true);
+    xmlhttp.open("GET","/TourGenie/controller/SaveController.php?p_id="+p_id+"&u_id="+u_id, true);
     //xmlhttp.setRequestHeader('Content-type','application/x-www-form-urlencoded');
     xmlhttp.send();
 }

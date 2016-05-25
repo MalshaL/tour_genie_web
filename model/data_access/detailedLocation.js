@@ -118,7 +118,7 @@ function savePlace2(){
         }
     };
 
-    xmlhttp.open("GET","/TourGenie/controller/saveController.php?p_id="+p_id+"&u_id="+u_id, true);
+    xmlhttp.open("GET","/TourGenie/controller/SaveController.php?p_id="+p_id+"&u_id="+u_id, true);
     //xmlhttp.setRequestHeader('Content-type','application/x-www-form-urlencoded');
     xmlhttp.send();
 }

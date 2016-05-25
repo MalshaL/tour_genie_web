@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/model/data_access/GetCity.php" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/model/data_access/GetCityImage.php" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/model/data_access/GetPlacesModel.php" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/model/data_access/LoginModel.php" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/model/data_access/SaveModel.php" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/model/data_access/SignUpModel.php" dialect="MySQL" />

@@ -82,9 +82,9 @@
                         <p id="placeLocationBox"></p>
                     </div>
                     <div class="buttonOptions">
-                        <a href="#" class="btn btn-default" id="checkinBtn"><i class="fa fa-check-circle"></i> Check in</a>
+                        <a href="#" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Add to My History" id="checkinBtn" onclick="saveHistory()"><i class="fa fa-check-circle"></i> Check in</a>
                         <a href="#" class="btn btn-default" id="tourBtn"><i class="fa fa-plus-circle"></i> Add to tour</a>
-                        <a href="#" class="btn btn-default" id="saveBtn" onclick="saveCurrLoc()"><i class="fa fa-bookmark"></i> Save</a>
+                        <a href="#" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Add to My Places" id="saveBtn" onclick="saveCurrLoc()"><i class="fa fa-bookmark"></i> Save</a>
                     </div>
                     <script>
                         var u_id = document.getElementById("u_id").innerHTML;

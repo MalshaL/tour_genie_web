@@ -11,6 +11,9 @@
     <?php include '../templates/css.php';
     error_reporting(E_ERROR);
     ?>
+
+    <?php include '../model/data_access/SaveModel.php';
+    include '../model/Entity/SavedPlace.php'; ?>
 </head>
 
 <body>
@@ -27,27 +30,8 @@
                 <p style="margin-top: 10px; font-size: 16px; padding-left: 10px;"><b>My Places</b></p>
             </div>
             <div id="resultView">
-                <ul class="resultList" style="list-style: none; padding-left: 0">
-                    <li class="placeView">
-                        <div id="photoContainer">
-                            <img src="../resources/images/1.jpg">
-                        </div>
-                        <div id="infoContainer">
-                            <div class="userRating">9</div>
-                            <div class="placeName">
-                                <h3><a href="">Shanghai Terrace</a></h3>
-                            </div>
-                            <div class="placeType">
-                                <p><i>Restaurant</i></p>
-                            </div>
-                            <div class="placeLocation">
-                                <p>Sri Jayawardenepura Kotte</p>
-                            </div>
-                            <div class="buttonOptions">
-                                <a href="#" class="btn btn-default"><i class="fa fa-crosshairs"></i> Remove</a>
-                            </div>
-                        </div>
-                    </li>
+                <ul class="resultList" id="resultListBox" style="list-style: none; padding-left: 0">
+
                 </ul>
             </div>
         </div>
@@ -58,5 +42,9 @@
 </main>
 
 <?php include '../templates/js.php' ?>
+<script src="../model/data_access/myPlaces.js"></script>
+<script>document.onload = handlePlaces()</script>
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places&language=en"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQwtY14UCzaIsy6mz39GCXAN3E7a1NYtk&libraries=places&callback=initMap2&language=en" async defer></script>
 </body>
 </html>

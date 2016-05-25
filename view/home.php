@@ -23,15 +23,14 @@
             google.maps.event.addListener(autocomplete, 'place_changed', function () {
                 mylocation = autocomplete.getPlace().name;
                 pos = autocomplete.getPlace().geometry.location;
-                document.location.href = 'searchResults.php?l=' + mylocation + '&t=' + type + '&lt=' + loc.lat + '&lg=' + loc.lng;
+                document.location.href = 'searchResults.php?l=' + mylocation + '&t=' + type + '&lt=' + pos.lat + '&lg=' + pos.lng;
             })
         }
-    </script>
-    <script>
+
         function getSelectedValue() {
             $("#dropdownBox1").find("li").click(function () {
                 var type = this.id;
-                document.location.href = 'searchResults.php?l=' + mylocation + '&t=' + type + '&lt=' + loc.lat + '&lg=' + loc.lng;
+                document.location.href = 'searchResults.php?l=' + mylocation + '&t=' + type + '&lt=' + pos.lat + '&lg=' + pos.lng;
             });
         }
     </script>

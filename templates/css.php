@@ -41,3 +41,9 @@ if (isset($_GET["error"])) {
             });
         </script>";
 } ?>
+
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>

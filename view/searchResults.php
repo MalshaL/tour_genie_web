@@ -25,13 +25,12 @@
                 pos = autocomplete.getPlace().geometry.location;
             })
         }
-    </script>
-    <script>
+
         function getSelectedValue(){
             $("#dropdownBox1").find("li").click(function() {
                 var type = this.id;
                 if(mylocation!=undefined){
-                    document.location.href = 'searchResults.php?l='+mylocation+'&t='+type+'&lt='+loc.lat+'&lg='+loc.lng;
+                    document.location.href = 'searchResults.php?l='+mylocation+'&t='+type+'&lt='+pos.lat+'&lg='+pos.lng;
                 }
             });
         }
@@ -50,7 +49,7 @@
         <div id="contentView">
             <div class="col-md-12" id="selectorSearch">
                 <div class="col-md-9">
-                    <p style="margin-top: 10px" id="selectedText">Showing places to <b id="selectedType"></b><br>near <b id="selectedLocation"></b></p>
+                    <p style="margin-top: 10px" id="selectedText">Showing places to <b id="selectedType"></b> near <b id="selectedLocation"></b></p>
                 </div>
                 <div class="col-md-3" style="padding-left: 0px; padding-top: 15px">
                     <div class="input-group">
@@ -85,7 +84,9 @@
 </main>
 <?php include '../templates/js.php' ?>
 <script src="../model/data_access/searchResults.js"></script>
+
 <script>document.onload = initMap2()</script>
+
 <script>function getSelectedVal() {
         $("#dropdownBox").find("li").click(function () {
             var type = this.id;
