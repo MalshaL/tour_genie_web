@@ -152,7 +152,7 @@ function saveCurrLoc(){
         }
     };
 
-    xmlhttp.open("GET","/TourGenie/controller/SaveController.php?p_id="+p_id+"&u_id="+u_id, true);
+    xmlhttp.open("GET","/TourGenie/controller/saveController.php?p_id="+p_id+"&u_id="+u_id, true);
     //xmlhttp.setRequestHeader('Content-type','application/x-www-form-urlencoded');
     xmlhttp.send();
 }
@@ -161,6 +161,7 @@ function saveHistory(){
     var p_id = document.getElementById("place_id").innerHTML;
     var u_id = document.getElementById("u_id").innerHTML;
     var id = "checkinBtn";
+    var date = new Date().toJSON().slice(0,10);
     var xmlhttp;
     if (window.XMLHttpRequest){
         xmlhttp = new XMLHttpRequest();
@@ -173,7 +174,7 @@ function saveHistory(){
         }
     };
 
-    xmlhttp.open("GET","/TourGenie/controller/SaveController.php?p_id="+p_id+"&u_id="+u_id, true);
+    xmlhttp.open("GET","/TourGenie/controller/historyController.php?p_id="+p_id+"&u_id="+u_id+"&date="+date, true);
     //xmlhttp.setRequestHeader('Content-type','application/x-www-form-urlencoded');
     xmlhttp.send();
 }

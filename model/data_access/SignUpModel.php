@@ -6,8 +6,8 @@
  * Time: 2:25 PM
  */
 
-include_once 'DBConnection.php';
-include '../Entity/User.php';
+include_once 'dbConnection.php';
+include '../entity/user.php';
 
 function save_user($user){
     $db_conn=DBConnection::get_database_connection(); // get the db connection

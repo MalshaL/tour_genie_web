@@ -12,7 +12,7 @@ if(isset($_SESSION["id"])){
 }?>
 
 <?php
-include '../model/data_access/SignUpModel.php';
+include '../model/data_access/signUpModel.php';
 ?>
 
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -39,7 +39,7 @@ include '../model/data_access/SignUpModel.php';
                     echo '<li><a href="myHistory.php">My History</a></li>';
                     echo '<li><a href="myPlaces.php">My Places</a></li>';
                     echo '<li><a href="myTours.php">My Tours</a></li>';
-                    echo '<li><a href="../controller/Logout.php?url=' . $url . '">Log Out</a></li>';
+                    echo '<li><a href="../controller/logout.php?url=' . $url . '">Log Out</a></li>';
                 } else {
                     echo '<li style="visibility: hidden" id="u_id">null</li>';
                     echo '<li><a href="#" data-toggle="modal" data-target="#loginModal">Log In</a></li>';
@@ -117,7 +117,7 @@ include '../model/data_access/SignUpModel.php';
                 <h4 class="modal-title">Log In</h4>
             </div>
             <div class="modal-body">
-                <form method="post" action="../controller/Logger.php?url=<?php echo $_SERVER["REQUEST_URI"] ?>">
+                <form method="post" action="../controller/logger.php?url=<?php echo $_SERVER["REQUEST_URI"] ?>">
                     <div class="form-group" style="margin-bottom: 15px;">
                         <input type="text" class="form-control" name="username" placeholder="Username or Email"
                                required>
@@ -150,7 +150,7 @@ include '../model/data_access/SignUpModel.php';
                 <h4 class="modal-title">Sign Up</h4>
             </div>
             <div class="modal-body">
-                <form method="post" action="../controller/SignUp.php?url=<?php echo $_SERVER["REQUEST_URI"] ?>">
+                <form method="post" action="../controller/signUp.php?url=<?php echo $_SERVER["REQUEST_URI"] ?>">
                     <div class="form-group" style="margin-bottom: 15px;">
                         <input type="text" class="form-control" name="username" placeholder="Username" required>
                     </div>

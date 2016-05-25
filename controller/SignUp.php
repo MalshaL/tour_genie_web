@@ -6,9 +6,9 @@
  * Time: 2:24 PM
  */
 
-include_once '../model/data_access/SignUpModel.php';
-include_once '../model/data_access/LoginModel.php';
-include '../model/Entity/User.php';
+include_once '../model/data_access/signUpModel.php';
+include_once '../model/data_access/loginModel.php';
+include '../model/entity/user.php';
 
 $uname =$_POST['username'];
 $email =$_POST['email'];

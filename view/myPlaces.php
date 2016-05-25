@@ -12,8 +12,8 @@
     error_reporting(E_ERROR);
     ?>
 
-    <?php include '../model/data_access/SaveModel.php';
-    include '../model/Entity/SavedPlace.php'; ?>
+    <?php include '../model/data_access/placesModel.php';
+    include '../model/entity/savedPlace.php'; ?>
 </head>
 
 <body>
@@ -45,6 +45,6 @@
 <script src="../model/data_access/myPlaces.js"></script>
 <script>document.onload = handlePlaces()</script>
 <script src="https://maps.googleapis.com/maps/api/js?libraries=places&language=en"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQwtY14UCzaIsy6mz39GCXAN3E7a1NYtk&libraries=places&callback=initMap2&language=en" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQwtY14UCzaIsy6mz39GCXAN3E7a1NYtk&libraries=places&callback=handlePlaces&language=en" async defer></script>
 </body>
 </html>

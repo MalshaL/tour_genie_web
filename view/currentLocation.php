@@ -6,8 +6,8 @@
     <?php include '../templates/css.php';
     error_reporting(E_ERROR);
     ?>
-    <?php include '../model/data_access/SaveModel.php';
-    include '../model/Entity/SavedPlace.php'; ?>
+    <?php include '../model/data_access/placesModel.php';
+    include '../model/entity/savedPlace.php'; ?>
 
     <script>
         var pos;
@@ -83,7 +83,7 @@
                     </div>
                     <div class="buttonOptions">
                         <a href="#" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Add to My History" id="checkinBtn" onclick="saveHistory()"><i class="fa fa-check-circle"></i> Check in</a>
-                        <a href="#" class="btn btn-default" id="tourBtn"><i class="fa fa-plus-circle"></i> Add to tour</a>
+                        <a href="#" class="btn btn-default" id="tourBtn" data-toggle="modal" data-target="#tourModal"><i class="fa fa-plus-circle"></i> Add to tour</a>
                         <a href="#" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Add to My Places" id="saveBtn" onclick="saveCurrLoc()"><i class="fa fa-bookmark"></i> Save</a>
                     </div>
                     <script>
@@ -111,6 +111,39 @@
         </div>
     </div>
 </main>
+
+<div id="tourModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add to Tour</h4>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="../controller/logger.php?url=<?php echo $_SERVER["REQUEST_URI"] ?>">
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <input type="text" class="form-control" name="username" placeholder="Username or Email"
+                               required>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 30px;">
+                        <input type="password" class="form-control" name="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-default"
+                            style="width: 100%; height:60px; background-color: #42c4d6; border-color: #42c4d6; font-weight: bold; font-size: 16px">
+                        Log In
+                    </button>
+                </form>
+                <?php
+                if (isset($_GET["error"]) == '1') { ?>
+                    <div id="errorBox">
+                        <b>Error in logging in!</b>
+                        <p>Login details are incorrect</p>
+                    </div>
+                <?php } ?>
+            </div>
+        </div>
+    </div>
+</div>
 
 <?php include '../templates/js.php' ?>
 <script src="../model/data_access/currentLocation.js"></script>

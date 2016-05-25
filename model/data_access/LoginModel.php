@@ -6,7 +6,7 @@
  * Time: 7:21 AM
  */
 
-include_once 'DBConnection.php';
+include_once 'dbConnection.php';
 
 
 function login_check($username,$password)

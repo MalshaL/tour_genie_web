@@ -6,7 +6,7 @@
  * Time: 7:20 AM
  */
 
-include_once '../model/data_access/LoginModel.php';
+include_once '../model/data_access/loginModel.php';
 
 $uname =$_POST['username'];
 $pword =$_POST['password'];

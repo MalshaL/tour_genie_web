@@ -6,8 +6,8 @@
  * Time: 2:08 PM
  */
 
-include_once 'DBConnection.php';
-//include '../Entity/SavedPlace.php';
+include_once 'dbConnection.php';
+//include '../entity/savedPlace.php';
 
 function save_place($savedPlace)
 {

@@ -1,5 +1,5 @@
 /**
- * Created by MalshaL on 5/24/2016.
+ * Created by MalshaL on 5/25/2016.
  */
 
 function getPlaces() {
@@ -17,16 +17,15 @@ function getPlaces() {
         }
     };
 
-    xmlhttp.open("GET", "/TourGenie/controller/getPlacesController.php?u_id=" + u_id, true);
+    xmlhttp.open("GET", "/TourGenie/controller/getHistoryController.php?u_id=" + u_id, true);
     //xmlhttp.setRequestHeader('Content-type','application/x-www-form-urlencoded');
     xmlhttp.send();
 }
 
-function handlePlaces() {
+function handleHistory() {
     var response = getPlaces();
     var arr = JSON.parse(response);
     var i;
-    var place_id;
 
     if (arr == null) {
 
@@ -41,7 +40,9 @@ function handlePlaces() {
         var service = new google.maps.places.PlacesService(map);
 
         for (i = 0; i < ar.length; i++) {
-            place_id = arr[i].place_id;
+            var place_id = arr[i].place_id;
+            var date = arr[i].date;
+            var times = arr[i].times_visited;
             service.getDetails({
                     placeId: placeID
                 }, function (place, stat) {
@@ -98,10 +99,48 @@ function handlePlaces() {
                         placeType.appendChild(document.createElement("P").appendChild(document.createTextNode(type)));
                         infoDiv.appendChild(placeType);
 
-                        var placeLocation = document.createElement("DIV");               //place type
+                        var placeLocation = document.createElement("DIV");               //place location
                         placeLocation.setAttribute("class", "placeLocation");
                         placeLocation.appendChild(document.createElement("P").appendChild(document.createTextNode(place.vicinity)));
                         infoDiv.appendChild(placeLocation);
+
+                        var placeDate = document.createElement("DIV");               //place date
+                        placeDate.setAttribute("class", "placeDate");
+                        placeDate.appendChild(document.createElement("P").appendChild(document.createTextNode("Last visited on "+date)));
+                        infoDiv.appendChild(placeDate);
+
+                        var placeTimes = document.createElement("DIV");               //place date
+                        placeTimes.setAttribute("class", "placeDate");
+                        if (times==1){
+                            placeTimes.appendChild(document.createElement("P").appendChild(document.createTextNode("Been here "+times+ "time")));
+                        } else{
+                            placeTimes.appendChild(document.createElement("P").appendChild(document.createTextNode("Been here "+times+ "times")));
+                        }
+                        infoDiv.appendChild(placeTimes);
+
+                        var btnDiv1 = document.createElement("DIV");
+                        btnDiv1.setAttribute("class", "buttonOptions");
+                        var btn1 = document.createElement("A");        // button
+                        btn1.setAttribute("class", "btn btn-default");
+                        btn1.setAttribute("id","btn"+i);
+                        var icon1 = document.createElement("I");
+                        icon1.setAttribute("class","fa fa-crosshairs");
+                        btn1.appendChild(icon);
+                        var t1 = document.createTextNode(" See Tour");
+                        btn1.appendChild(t);
+                        var u_id = document.getElementById("u_id").innerHTML;
+                        if(u_id!='null'){
+                            btn1.setAttribute("p_id",p_id);
+                            btn1.setAttribute("u_id",u_id);
+                            btn1.onclick = function(){
+                                addToTour(this.getAttribute("p_id"), this.getAttribute("u_id"), this.getAttribute("id"));
+                            }
+                        }
+                        else{
+                            btn.setAttribute('disabled','disabled');
+                        }
+                        btnDiv1.appendChild(btn);
+                        infoDiv.appendChild(btnDiv1);
 
                         var btnDiv = document.createElement("DIV");
                         btnDiv.setAttribute("class", "buttonOptions");
@@ -113,7 +152,6 @@ function handlePlaces() {
                         btn.appendChild(icon);
                         var t = document.createTextNode(" Remove");
                         btn.appendChild(t);
-                        var u_id = document.getElementById("u_id").innerHTML;
                         if(u_id!='null'){
                             btn.setAttribute("p_id",p_id);
                             btn.setAttribute("u_id",u_id);
@@ -153,6 +191,24 @@ function createMarker(place) {
 }
 
 function removePlace(p_id, u_id, id){
+    var xmlhttp;
+    if (window.XMLHttpRequest){
+        xmlhttp = new XMLHttpRequest();
+    } else{
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange = function () {
+        if(xmlhttp.readyState==4 &&xmlhttp.status==200){
+            document.getElementById(id).setAttribute("disabled","disabled");
+        }
+    };
+
+    xmlhttp.open("GET","/TourGenie/controller/removeHistoryController.php?p_id="+p_id+"&u_id="+u_id, true);
+    //xmlhttp.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+    xmlhttp.send();
+}
+
+function seeTour(){
     var xmlhttp;
     if (window.XMLHttpRequest){
         xmlhttp = new XMLHttpRequest();

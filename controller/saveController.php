@@ -6,9 +6,8 @@
  * Time: 9:39 PM
  */
 
-include_once '../model/data_access/SaveModel.php';
-include '../model/Entity/SavedPlace.php';
-
+include_once '../model/data_access/placesModel.php';
+include '../model/entity/savedPlace.php';
 
 $p_id = $_GET["p_id"];
 $u_id = $_GET["u_id"];
