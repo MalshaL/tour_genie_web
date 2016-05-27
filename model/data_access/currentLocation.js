@@ -1,6 +1,4 @@
-/**
- * Created by MalshaL on 4/29/2016.
- */
+
 var map;
 var marker;
 

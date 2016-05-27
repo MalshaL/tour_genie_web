@@ -2,33 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44b34e99-700f-46c2-b0d8-e9a6a380939e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/GetHistoryController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/RemoveHistoryController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/data_access/GetHistoryModel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/data_access/HistoryModel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/data_access/myHistory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/qunit/qunit-1.23.1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/qunit/qunit-1.23.1.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model/data_access/SaveModel.php" afterPath="$PROJECT_DIR$/model/data_access/PlacesModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/addToTourController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/getTours.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/Entity/VisitedPlace.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/data_access/tourModel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/GetPlacesController.php" afterPath="$PROJECT_DIR$/controller/GetPlacesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/HistoryController.php" afterPath="$PROJECT_DIR$/controller/HistoryController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/GetHistoryController.php" afterPath="$PROJECT_DIR$/controller/GetHistoryController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/Logger.php" afterPath="$PROJECT_DIR$/controller/Logger.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/RemovePlacesController.php" afterPath="$PROJECT_DIR$/controller/RemovePlacesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/Logout.php" afterPath="$PROJECT_DIR$/controller/Logout.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/SignUp.php" afterPath="$PROJECT_DIR$/controller/SignUp.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/saveController.php" afterPath="$PROJECT_DIR$/controller/saveController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/data_access/GetPlacesModel.php" afterPath="$PROJECT_DIR$/model/data_access/GetPlacesModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/Entity/Place.php" afterPath="$PROJECT_DIR$/model/Entity/Place.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/Entity/SavedPlace.php" afterPath="$PROJECT_DIR$/model/Entity/SavedPlace.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/Entity/User.php" afterPath="$PROJECT_DIR$/model/Entity/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/data_access/GetHistoryModel.php" afterPath="$PROJECT_DIR$/model/data_access/GetHistoryModel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/data_access/LoginModel.php" afterPath="$PROJECT_DIR$/model/data_access/LoginModel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/data_access/SignUpModel.php" afterPath="$PROJECT_DIR$/model/data_access/SignUpModel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/data_access/currentLocation.js" afterPath="$PROJECT_DIR$/model/data_access/currentLocation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/data_access/detailedLocation.js" afterPath="$PROJECT_DIR$/model/data_access/detailedLocation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/data_access/myPlaces.js" afterPath="$PROJECT_DIR$/model/data_access/myPlaces.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/data_access/searchResults.js" afterPath="$PROJECT_DIR$/model/data_access/searchResults.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/data_access/myHistory.js" afterPath="$PROJECT_DIR$/model/data_access/myHistory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/tourgenie2.css" afterPath="$PROJECT_DIR$/resources/css/tourgenie2.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/apis.php" afterPath="$PROJECT_DIR$/templates/apis.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/css.php" afterPath="$PROJECT_DIR$/templates/css.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/header.php" afterPath="$PROJECT_DIR$/templates/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/js.php" afterPath="$PROJECT_DIR$/templates/js.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/currentLocation.php" afterPath="$PROJECT_DIR$/view/currentLocation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/detailedLocation.php" afterPath="$PROJECT_DIR$/view/detailedLocation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/detailedTour.php" afterPath="$PROJECT_DIR$/view/detailedTour.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/home.php" afterPath="$PROJECT_DIR$/view/home.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/myHistory.php" afterPath="$PROJECT_DIR$/view/myHistory.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/myPlaces.php" afterPath="$PROJECT_DIR$/view/myPlaces.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/myTours.php" afterPath="$PROJECT_DIR$/view/myTours.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/searchResults.php" afterPath="$PROJECT_DIR$/view/searchResults.php" />
     </list>
     <ignored path="TourGenie.iws" />
@@ -63,72 +66,7 @@
     <favorites_list name="TourGenie" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="myHistory.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/model/data_access/myHistory.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27062705">
-              <caret line="206" column="78" selection-start-line="206" selection-start-column="78" selection-end-line="206" selection-end-column="78" />
-              <folding>
-                <element signature="n#!!doc;n#getPlaces#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="removeHistoryController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/removeHistoryController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.115385">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="e#6#90#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myHistory.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/myHistory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.807693">
-              <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="historyModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/data_access/historyModel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.461538">
-              <caret line="47" column="55" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
-              <folding>
-                <element signature="e#6#90#0#PHP" expanded="true" />
-                <marker date="1464191746921" expanded="true" signature="408:469" placeholder="SELECT * FRO... user_history" />
-                <marker date="1464191746921" expanded="true" signature="421:435" placeholder="INSERT INTO saved_place... " />
-                <marker date="1464191746921" expanded="true" signature="667:746" placeholder="INSERT INTO user_history... " />
-                <marker date="1464191746921" expanded="true" signature="942:1041" placeholder="UPDATE user_... " />
-                <marker date="1464191746921" expanded="true" signature="1474:1532" placeholder="DELETE FROM " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getHistoryModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/data_access/getHistoryModel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.807693">
-              <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
-              <folding>
-                <element signature="e#6#90#0#PHP" expanded="true" />
-                <marker date="1464191746874" expanded="true" signature="371:443" placeholder="SELECT place... saved_place" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -145,57 +83,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/view/myTours.php" />
-        <option value="$PROJECT_DIR$/resources/js/tourGenie.js" />
-        <option value="$PROJECT_DIR$/resources/js/header.js" />
-        <option value="$PROJECT_DIR$/model/data_access/DBConnection.php" />
-        <option value="$PROJECT_DIR$/templates/js.php" />
-        <option value="$PROJECT_DIR$/templates/apis.php" />
-        <option value="$PROJECT_DIR$/controller/Place.php" />
-        <option value="$PROJECT_DIR$/controller/SavedPlace.php" />
-        <option value="$PROJECT_DIR$/model/Entity/UserModel.php" />
-        <option value="$PROJECT_DIR$/model/data_access/LoginModel.php" />
-        <option value="$PROJECT_DIR$/resources/js/startUp.js" />
-        <option value="$PROJECT_DIR$/templates/startUp.php" />
-        <option value="$PROJECT_DIR$/model/data_access/SignUpModel.php" />
-        <option value="$PROJECT_DIR$/controller/SignUp.php" />
-        <option value="$PROJECT_DIR$/controller/Logger.php" />
-        <option value="$PROJECT_DIR$/controller/Logout.php" />
-        <option value="$PROJECT_DIR$/model/Entity/Place.php" />
-        <option value="$PROJECT_DIR$/model/data_access/GetCityImage.php" />
-        <option value="$PROJECT_DIR$/model/data_access/GetCity.php" />
         <option value="$PROJECT_DIR$/resources/js/currentLocation.js" />
         <option value="$PROJECT_DIR$/resources/js/searchResults.js" />
-        <option value="$PROJECT_DIR$/templates/header.php" />
         <option value="$PROJECT_DIR$/model/Entity/SavedPlace.php" />
         <option value="$PROJECT_DIR$/controller/saveController.php" />
-        <option value="$PROJECT_DIR$/view/detailedLocation.php" />
         <option value="$PROJECT_DIR$/model/data_access/detailedLocation.js" />
         <option value="$PROJECT_DIR$/model/data_access/RetrieveModel.php" />
         <option value="$PROJECT_DIR$/controller/GetPlacesController.php" />
         <option value="$PROJECT_DIR$/model/data_access/myPlaces.js" />
         <option value="$PROJECT_DIR$/controller/RemovePlacesController.php" />
         <option value="$PROJECT_DIR$/model/data_access/SaveModel.php" />
-        <option value="$PROJECT_DIR$/view/home.php" />
-        <option value="$PROJECT_DIR$/resources/css/tourgenie2.css" />
-        <option value="$PROJECT_DIR$/view/searchResults.php" />
-        <option value="$PROJECT_DIR$/templates/css.php" />
         <option value="$PROJECT_DIR$/model/data_access/searchResults.js" />
-        <option value="$PROJECT_DIR$/model/data_access/currentLocation.js" />
         <option value="$PROJECT_DIR$/model/Entity/VisitedPlace.php" />
         <option value="$PROJECT_DIR$/controller/SaveController.php" />
         <option value="$PROJECT_DIR$/controller/HistoryController.php" />
         <option value="$PROJECT_DIR$/model/data_access/GetPlacesModel.php" />
-        <option value="$PROJECT_DIR$/view/currentLocation.php" />
         <option value="$PROJECT_DIR$/resources/qunit/qunit-1.23.1.js" />
         <option value="$PROJECT_DIR$/resources/qunit/qunit-1.23.1.css" />
-        <option value="$PROJECT_DIR$/view/myPlaces.php" />
         <option value="$PROJECT_DIR$/controller/GetHistoryController.php" />
         <option value="$PROJECT_DIR$/model/data_access/GetHistoryModel.php" />
         <option value="$PROJECT_DIR$/model/data_access/HistoryModel.php" />
-        <option value="$PROJECT_DIR$/model/data_access/myHistory.js" />
-        <option value="$PROJECT_DIR$/view/myHistory.php" />
         <option value="$PROJECT_DIR$/controller/RemoveHistoryController.php" />
+        <option value="$PROJECT_DIR$/view/detailedTour.php" />
+        <option value="$PROJECT_DIR$/controller/getHistoryController.php" />
+        <option value="$PROJECT_DIR$/model/entity/visitedPlace.php" />
+        <option value="$PROJECT_DIR$/templates/header.php" />
+        <option value="$PROJECT_DIR$/templates/css.php" />
+        <option value="$PROJECT_DIR$/templates/js.php" />
+        <option value="$PROJECT_DIR$/templates/apis.php" />
+        <option value="$PROJECT_DIR$/view/myHistory.php" />
+        <option value="$PROJECT_DIR$/controller/logger.php" />
+        <option value="$PROJECT_DIR$/controller/logout.php" />
+        <option value="$PROJECT_DIR$/controller/signUp.php" />
+        <option value="$PROJECT_DIR$/model/data_access/signUpModel.php" />
+        <option value="$PROJECT_DIR$/model/entity/user.php" />
+        <option value="$PROJECT_DIR$/model/entity/place.php" />
+        <option value="$PROJECT_DIR$/view/detailedLocation.php" />
+        <option value="$PROJECT_DIR$/model/data_access/loginModel.php" />
+        <option value="$PROJECT_DIR$/view/home.php" />
+        <option value="$PROJECT_DIR$/view/myPlaces.php" />
+        <option value="$PROJECT_DIR$/view/myTours.php" />
+        <option value="$PROJECT_DIR$/view/searchResults.php" />
+        <option value="$PROJECT_DIR$/model/data_access/currentLocation.js" />
+        <option value="$PROJECT_DIR$/model/data_access/getHistoryModel.php" />
+        <option value="$PROJECT_DIR$/model/data_access/myHistory.js" />
+        <option value="$PROJECT_DIR$/resources/css/tourgenie2.css" />
+        <option value="$PROJECT_DIR$/model/entity/tour.php" />
+        <option value="$PROJECT_DIR$/model/entity/tourStop.php" />
+        <option value="$PROJECT_DIR$/view/currentLocation.php" />
+        <option value="$PROJECT_DIR$/model/data_access/historyModel.php" />
+        <option value="$PROJECT_DIR$/model/data_access/tourModel.php" />
+        <option value="$PROJECT_DIR$/controller/addToTourController.php" />
       </list>
     </option>
   </component>
@@ -259,7 +197,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -289,6 +226,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="TourGenie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TourGenie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TourGenie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TourGenie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TourGenie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -344,6 +313,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -431,26 +401,32 @@
       <option name="project" value="LOCAL" />
       <updated>1464168738741</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="History handling completed">
+      <created>1464191935639</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1464191935639</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24450952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24450952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5725552" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62776023" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62776023" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -458,26 +434,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24450952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -492,7 +448,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="My Places handling completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="My Places handling completed" />
+    <MESSAGE value="History handling completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="History handling completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -501,55 +458,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/css/agency.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="527" selection-start-line="0" selection-start-column="527" selection-end-line="0" selection-end-column="527" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/tourgenie.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/agency.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="9949" selection-start-line="0" selection-start-column="9941" selection-end-line="0" selection-end-column="9949" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/ag2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.127274">
-          <caret line="91" column="51" selection-start-line="91" selection-start-column="44" selection-end-line="91" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="127.69512">
-          <caret line="4" column="70089" selection-start-line="4" selection-start-column="70079" selection-end-line="4" selection-end-column="70089" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/agency.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3970588">
-          <caret line="0" column="2671" selection-start-line="0" selection-start-column="2671" selection-end-line="0" selection-end-column="2671" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/detailedTour.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36077058">
-          <caret line="34" column="63" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/css/tourgenie.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8038529">
@@ -592,105 +500,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/js.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5862069">
-          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/apis.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23448277">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05862069">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/logger.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55689657">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/entity/place.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.846153">
-          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/entity/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-33.346153">
-          <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/signUp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43965518">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/data_access/signUpModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17586207">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/data_access/loginModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48793104">
-          <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.3076925">
-          <caret line="32" column="124" selection-start-line="32" selection-start-column="124" selection-end-line="32" selection-end-column="124" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/tourgenie2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14700544">
-          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/detailedLocation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.0">
-          <caret line="82" column="67" selection-start-line="82" selection-start-column="67" selection-end-line="82" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/data_access/searchResults.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="155" column="6" selection-start-line="155" selection-start-column="6" selection-end-line="155" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -701,64 +514,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/css.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <marker date="1464168308644" expanded="true" signature="1596:1719" placeholder="..." />
-            <marker date="1464168308644" expanded="true" signature="1637:1700" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/entity/savedPlace.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/data_access/currentLocation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="179" column="1" selection-start-line="179" selection-start-column="1" selection-end-line="179" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/searchResults.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.67068964">
-          <caret line="53" column="60" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/saveController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29310346">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41379312">
-          <caret line="142" column="6" selection-start-line="142" selection-start-column="6" selection-end-line="142" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/myTours.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6603448">
-          <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,9 +525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.5330033">
           <caret line="4333" column="6" selection-start-line="4333" selection-start-column="6" selection-end-line="4333" selection-end-column="6" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -779,59 +535,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/currentLocation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.0">
-          <caret line="123" column="73" selection-start-line="123" selection-start-column="73" selection-end-line="123" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/getPlacesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.029310346">
           <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/data_access/myPlaces.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
-          <folding>
-            <element signature="n#!!doc;n#getPlaces#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/historyController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5862069">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/myPlaces.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43965518">
-          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/getHistoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35172415">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -839,19 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.87931037">
           <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="true" />
-            <marker date="1464191746906" expanded="true" signature="376:426" placeholder="SELECT place... saved_place" />
-            <marker date="1464191746906" expanded="true" signature="396:409" placeholder="INSERT INTO saved_place... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/entity/visitedPlace.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.87931037">
-          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -859,47 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.1923075">
           <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/data_access/placesModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8206897">
-          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-          <folding>
-            <marker date="1464191746837" expanded="true" signature="400:456" placeholder="INSERT INTO saved_place... " />
-            <marker date="1464191746837" expanded="true" signature="799:845" placeholder="INSERT IGNOR... place" />
-            <marker date="1464191746837" expanded="true" signature="1218:1241" placeholder="DELETE FROM " />
-            <marker date="1464191746837" expanded="true" signature="1218:1269" placeholder="DELETE FROM " />
-            <marker date="1464191746837" expanded="true" signature="1229:1236" placeholder="INSERT IGNOR... place" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/data_access/getHistoryModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.807693">
-          <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="true" />
-            <marker date="1464191746874" expanded="true" signature="371:443" placeholder="SELECT place... saved_place" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/data_access/historyModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.461538">
-          <caret line="47" column="55" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="true" />
-            <marker date="1464191746921" expanded="true" signature="408:469" placeholder="SELECT * FRO... user_history" />
-            <marker date="1464191746921" expanded="true" signature="421:435" placeholder="INSERT INTO saved_place... " />
-            <marker date="1464191746921" expanded="true" signature="667:746" placeholder="INSERT INTO user_history... " />
-            <marker date="1464191746921" expanded="true" signature="942:1041" placeholder="UPDATE user_... " />
-            <marker date="1464191746921" expanded="true" signature="1474:1532" placeholder="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -907,26 +560,328 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.115385">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/getTours.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/detailedTour.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34827587">
+          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/entity/savedPlace.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55689657">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/getHistoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6#90#0#PHP" expanded="true" />
+            <marker date="1464328021983" expanded="true" signature="1282:1300" placeholder="..." />
+            <marker date="1464328021983" expanded="true" signature="1724:1742" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/entity/visitedPlace.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/css.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1464328531483" expanded="true" signature="1504:1627" placeholder="..." />
+            <marker date="1464328531483" expanded="true" signature="1545:1608" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/js.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/apis.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/detailedLocation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/data_access/loginModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding>
+            <marker date="1464329333065" expanded="true" signature="198:252" placeholder="SELECT * FRO... user" />
+            <marker date="1464329333065" expanded="true" signature="786:846" placeholder="SELECT user_... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/logger.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/signUp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/data_access/signUpModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding>
+            <marker date="1464328531465" expanded="true" signature="315:374" placeholder="INSERT INTO user... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/entity/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/entity/place.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/myPlaces.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/myTours.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/myHistory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="2046" column="0" selection-start-line="2046" selection-start-column="0" selection-end-line="2046" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/tourgenie2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24827586">
+          <caret line="171" column="19" selection-start-line="171" selection-start-column="19" selection-end-line="171" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/searchResults.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.384615">
+          <caret line="67" column="46" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/data_access/myPlaces.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.028052805">
+          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/data_access/myHistory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27062705">
-          <caret line="206" column="78" selection-start-line="206" selection-start-column="78" selection-end-line="206" selection-end-column="78" />
+        <state vertical-scroll-proportion="-1.6650165">
+          <caret line="129" column="40" selection-start-line="129" selection-start-column="40" selection-end-line="129" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/historyController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/data_access/currentLocation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="160" column="26" selection-start-line="160" selection-start-column="26" selection-end-line="160" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/data_access/placesModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49827588">
+          <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
           <folding>
-            <element signature="n#!!doc;n#getPlaces#0" expanded="false" />
+            <marker date="1464191746837" expanded="true" signature="400:456" placeholder="INSERT INTO saved_place... " />
+            <marker date="1464191746837" expanded="true" signature="799:845" placeholder="INSERT IGNOR... place" />
+            <marker date="1464191746837" expanded="true" signature="1218:1269" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/entity/tour.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/entity/tourStop.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <element signature="e#6#90#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/data_access/getHistoryModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <marker date="1464330547879" expanded="true" signature="287:359" placeholder="SELECT place... saved_place" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/currentLocation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2637931">
+          <caret line="150" column="25" selection-start-line="150" selection-start-column="25" selection-end-line="150" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/addToTourController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.93793106">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/data_access/historyModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.87931037">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+          <folding>
+            <marker date="1464362037414" expanded="true" signature="408:469" placeholder="SELECT * FRO... user_history" />
+            <marker date="1464362037414" expanded="true" signature="667:746" placeholder="INSERT INTO user_history... " />
+            <marker date="1464362037414" expanded="true" signature="942:1041" placeholder="UPDATE user_... " />
+            <marker date="1464362037414" expanded="true" signature="1474:1532" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/data_access/tourModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7327586">
+          <caret line="90" column="28" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="28" />
+          <folding>
+            <marker date="1464362385863" expanded="true" signature="184:268" placeholder="SELECT place... " />
+            <marker date="1464362385863" expanded="true" signature="1229:1329" placeholder="UPDATE user_... " />
+            <marker date="1464362385863" expanded="true" signature="1235:1246" placeholder="INSERT INTO tour_stop... " />
+            <marker date="1464362385863" expanded="true" signature="1878:1964" placeholder="INSERT INTO tour_stop... " />
+            <marker date="1464362385863" expanded="true" signature="2408:2469" placeholder="SELECT * FRO... user_history" />
+            <marker date="1464362385863" expanded="true" signature="2712:2791" placeholder="INSERT INTO user_history... " />
+            <marker date="1464362385863" expanded="true" signature="3179:3278" placeholder="UPDATE user_... " />
           </folding>
         </state>
       </provider>

@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: MalshaL
- * Date: 5/25/2016
- * Time: 8:41 PM
- */
+
 
 include 'dbConnection.php';
 
@@ -27,8 +22,8 @@ function get_history($user_id){
                 $output .= ",";
             }
             $output .= '{"place_id":"' . $res["place_id"] . '",';
-            $output .= '{"date":"' . $res["date"] . '",';
-            $output .= '{"times_visited":"' . $res["times_visited"] . '"}';
+            $output .= '"date":"' . $res["date"] . '",';
+            $output .= '"times_visited":"' . $res["times_visited"] . '"}';
         }
         $output .= "]";
     }

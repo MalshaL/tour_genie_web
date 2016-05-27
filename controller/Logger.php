@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: MalshaL
- * Date: 5/3/2016
- * Time: 7:20 AM
- */
 
 include_once '../model/data_access/loginModel.php';
 

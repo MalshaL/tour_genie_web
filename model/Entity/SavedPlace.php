@@ -5,7 +5,7 @@
  * Date: 5/3/2016
  * Time: 2:09 PM
  */
-include_once 'Place.php';
+include_once 'place.php';
 
 class SavedPlace extends Place{
     private $user_id;

@@ -1,9 +1,4 @@
-<!--/**
- * Created by PhpStorm.
- * User: MalshaL
- * Date: 4/21/2016
- * Time: 11:47 PM
- */-->
+
 <?php
 session_start();
 if(isset($_SESSION["id"])){

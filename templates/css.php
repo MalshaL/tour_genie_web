@@ -1,9 +1,4 @@
-<!--/**
- * Created by PhpStorm.
- * User: MalshaL
- * Date: 3/31/2016
- * Time: 11:45 AM
- */-->
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">

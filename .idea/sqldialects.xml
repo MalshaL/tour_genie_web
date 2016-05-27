@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/model/data_access/dbConnection.php" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/model/data_access/getHistoryModel.php" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/model/data_access/getPlacesModel.php" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/model/data_access/historyModel.php" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/model/data_access/loginModel.php" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/model/data_access/placesModel.php" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/model/data_access/signUpModel.php" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/model/data_access/tourModel.php" dialect="MySQL" />
   </component>
 </project>

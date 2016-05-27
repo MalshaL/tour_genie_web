@@ -1,9 +1,4 @@
-<!--/**
- * Created by PhpStorm.
- * User: MalshaL
- * Date: 3/31/2016
- * Time: 12:00 PM
- */-->
+
 <!-- jQuery -->
 <script src="../resources/js/jquery.js"></script>
 <script src="../resources/js/jquery-2.2.3.min.js"></script>

@@ -27,19 +27,12 @@
                     <p style="margin-top: 10px; font-weight: bold; ">Tour Name</p>
             </div>
             <div id="resultView" class="singleplaceView">
-                <div id="locationPhoto">
-                    <img src="../resources/images/1.jpg">
+                <div id="locationPhoto" class="locationPhoto">
+                    <img id="locationPhotoBox">
                 </div>
                 <div id="locationInfo">
                     <div class="tourDate">
                         <p><i>12 April 2016</i> to <i>20 April 2016</i></p>
-                    </div>
-                    <div class="tourDescription">
-                        <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-                            blah blah
-                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-                            blah blah
-                            blah blah</p>
                     </div>
                     <div class="tourPlaces">
                         <ul>

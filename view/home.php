@@ -1,9 +1,4 @@
-<!--/**
- * Created by PhpStorm.
- * User: MalshaL
- * Date: 4/15/2016
- * Time: 7:16 AM
- */-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

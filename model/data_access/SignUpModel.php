@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: MalshaL
- * Date: 5/3/2016
- * Time: 2:25 PM
- */
 
 include_once 'dbConnection.php';
 include '../entity/user.php';
