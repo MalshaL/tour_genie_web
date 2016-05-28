@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44b34e99-700f-46c2-b0d8-e9a6a380939e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/Entity/tour.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/Entity/tourStop.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/autocomplete.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/Logger.php" afterPath="$PROJECT_DIR$/controller/Logger.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/SignUp.php" afterPath="$PROJECT_DIR$/controller/SignUp.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/data_access/HistoryModel.php" afterPath="$PROJECT_DIR$/model/data_access/HistoryModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/data_access/LoginModel.php" afterPath="$PROJECT_DIR$/model/data_access/LoginModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/data_access/SignUpModel.php" afterPath="$PROJECT_DIR$/model/data_access/SignUpModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/header.php" afterPath="$PROJECT_DIR$/templates/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/currentLocation.php" afterPath="$PROJECT_DIR$/view/currentLocation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/detailedLocation.php" afterPath="$PROJECT_DIR$/view/detailedLocation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/detailedTour.php" afterPath="$PROJECT_DIR$/view/detailedTour.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/home.php" afterPath="$PROJECT_DIR$/view/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/myHistory.php" afterPath="$PROJECT_DIR$/view/myHistory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/myPlaces.php" afterPath="$PROJECT_DIR$/view/myPlaces.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/myTours.php" afterPath="$PROJECT_DIR$/view/myTours.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/searchResults.php" afterPath="$PROJECT_DIR$/view/searchResults.php" />
     </list>
     <ignored path="TourGenie.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -399,7 +382,13 @@
       <option name="project" value="LOCAL" />
       <updated>1464471910650</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Autocomplete and searching completed">
+      <created>1464473078469</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1464473078469</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -443,7 +432,8 @@
     <MESSAGE value="History handling completed" />
     <MESSAGE value="Current Location file completed" />
     <MESSAGE value="Login functionality changed ad completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login functionality changed ad completed" />
+    <MESSAGE value="Autocomplete and searching completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Autocomplete and searching completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
