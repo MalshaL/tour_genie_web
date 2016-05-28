@@ -29,6 +29,20 @@ function get_tour_list($user_id){
     }
 }
 
+function add_to_places($place){         //check if exists and then insert or set  ==edit this
+    $db_conn = DBConnection::get_database_connection(); // get the db connection
+
+    $place_id = $place->get_place_id();
+    $visitors = 1;
+
+    $stmt = $db_conn->prepare("INSERT IGNORE INTO place (place_id, no_of_visitors) VALUES (?, ?)");
+    $stmt->bind_param("si", $place_id, $visitors);
+    $stmt->execute();
+    $stmt->close();
+
+    DBConnection::close_database_connection($db_conn);
+}
+
 function update_tour($tour){
     $db_conn = DBConnection::get_database_connection(); // get the db connection
 

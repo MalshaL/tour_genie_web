@@ -1,4 +1,26 @@
+<?php
+if ($_GET["error"]==1) {
+    echo "<script>
+            $(window).load(function () {
+                $('#loginModal').modal('show');
+            });
+        </script>";
+} ?>
 
+<?php
+if (($_GET["emailError"]==1)) {
+    echo "<script>
+            $(window).load(function () {
+                $('#signupModal').modal('show');
+            });
+        </script>";
+} ?>
+
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
 <!-- jQuery -->
 <script src="../resources/js/jquery.js"></script>
 <script src="../resources/js/jquery-2.2.3.min.js"></script>

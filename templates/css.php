@@ -28,17 +28,4 @@
 <![endif]-->
 
 <script src="../resources/js/jquery-2.2.3.min.js"></script>
-<?php
-if (isset($_GET["error"])) {
-    echo "<script>
-            $(window).load(function () {
-                $('#loginModal').modal('show');
-            });
-        </script>";
-} ?>
 
-<script>
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-    });
-</script>

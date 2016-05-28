@@ -51,14 +51,7 @@ include '../model/data_access/signUpModel.php';
             <div class="col-md-10">
                 <form class="form-horizontal" role="search">
                     <div class="col-md-3">
-                        <p style="margin-top: 10px; font-size: 15px; font-weight: bold">Let Tour Genie guide you
-                            to...</p>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="form-group pac-container" style="margin-left: 0px">
-                            <input type="text" id="autocomplete"/>
-
-                        </div>
+                        <p style="margin-top: 10px; font-size: 15px; font-weight: bold">Let Tour Genie guide you</p>
                     </div>
                     <div class="col-md-2">
                         <div class="form-group">
@@ -94,6 +87,12 @@ include '../model/data_access/signUpModel.php';
                             </div><!-- /input-group -->
                         </div>
                     </div>
+                    <div class="col-md-5">
+                        <div class="form-group pac-container" style="margin-left: 0px">
+                            <input type="text" id="autocomplete"/>
+
+                        </div>
+                    </div>
                 </form>
             </div>
             <div class="col-md-2">
@@ -126,7 +125,7 @@ include '../model/data_access/signUpModel.php';
                     </button>
                 </form>
                 <?php
-                if (isset($_GET["error"]) == '1') { ?>
+                if (($_GET["error"]) == '1') { ?>
                     <div id="errorBox">
                         <b>Error in logging in!</b>
                         <p>Login details are incorrect</p>
@@ -160,6 +159,13 @@ include '../model/data_access/signUpModel.php';
                         Sign Up
                     </button>
                 </form>
+                <?php
+                if (($_GET["emailError"]) == '1') { ?>
+                    <div id="errorBox">
+                        <b>Error in signing up!</b>
+                        <p>Email is invalid</p>
+                    </div>
+                <?php } ?>
             </div>
         </div>
     </div>
