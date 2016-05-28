@@ -6,6 +6,10 @@
     <?php include '../templates/css.php';
     error_reporting(E_ERROR);
     ?>
+    <?php
+    include '../templates/autocomplete.php';
+    error_reporting(E_ERROR);
+    ?>
 
     <?php include '../model/data_access/placesModel.php';
     include '../model/entity/savedPlace.php'; ?>

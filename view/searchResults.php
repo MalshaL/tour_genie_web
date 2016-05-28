@@ -6,30 +6,13 @@
     <?php include '../templates/css.php';
     error_reporting(E_ERROR);
     ?>
+    <?php
+    include '../templates/autocomplete.php';
+    error_reporting(E_ERROR);
+    ?>
     <?php include '../model/data_access/placesModel.php';
     include '../model/entity/savedPlace.php'; ?>
 
-    <script>
-        var pos;
-        var mylocation;
-        function initAutocomplete(){
-            var input = document.getElementById('autocomplete');
-            var autocomplete = new google.maps.places.Autocomplete(input);
-            google.maps.event.addListener(autocomplete, 'place_changed', function(){
-                mylocation = autocomplete.getPlace().name;
-                pos = autocomplete.getPlace().geometry.location;
-            })
-        }
-
-        function getSelectedValue(){
-            $("#dropdownBox1").find("li").click(function() {
-                var type = this.id;
-                if(mylocation!=undefined){
-                    document.location.href = 'searchResults.php?l='+mylocation+'&t='+type+'&lt='+pos.lat+'&lg='+pos.lng;
-                }
-            });
-        }
-    </script>
 </head>
 
 <body onload="initAutocomplete()">

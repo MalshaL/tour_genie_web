@@ -22,7 +22,7 @@ function save_visited_place($savedPlace)
 
     $result = $stmt->get_result();
     if($result->num_rows==0){
-        $times = 0;
+        $times = 1;
         $stmt2 = $db_conn->prepare("INSERT INTO user_history (user_id,place_id,date,times_visited) VALUES (?,?,?,?)");
         $stmt2->bind_param("sssi",$user_id,$place_id,$date,$times);
         $stmt2->execute();

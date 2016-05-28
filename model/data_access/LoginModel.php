@@ -3,10 +3,36 @@
 include_once 'dbConnection.php';
 
 
-function login_check($username,$password)
+function login_check_username($username,$password)
 {
     $db_conn = DBConnection::get_database_connection(); // get the db connection
+    $password = md5($password);
     $stmt = $db_conn->prepare("SELECT * FROM user where username = ? AND password = ?");// prepare
+    $stmt->bind_param("ss", $username,$password);
+    // execute the query
+    $stmt->execute() ;
+
+    if(!($result= $stmt->get_result()))
+    {
+        echo "Error " . $stmt->error;
+    }
+    if($result->num_rows==0)
+    {
+        return "N";
+    }
+    else{
+        return "S";
+    }
+
+    $stmt->close();
+    DBConnection::close_database_connection($db_conn);
+}
+
+function login_check_email($username,$password)
+{
+    $db_conn = DBConnection::get_database_connection(); // get the db connection
+    $password = md5($password);
+    $stmt = $db_conn->prepare("SELECT * FROM user where email = ? AND password = ?");// prepare
     $stmt->bind_param("ss", $username,$password);
     // execute the query
     $stmt->execute() ;

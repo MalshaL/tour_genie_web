@@ -8,6 +8,7 @@ function save_user($user){
 
     $username=$user->get_username();
     $password=$user->get_password();
+    $password = md5($password);
     $email=$user->get_email();
 
     $stmt = $db_conn->prepare("INSERT INTO user (username,password,email) VALUES (?, ?, ?)");

@@ -62,23 +62,23 @@ include '../model/data_access/signUpModel.php';
                                             aria-haspopup="true" aria-expanded="false">Look for places to... <span
                                             class="caret"></span></button>
                                     <ul class="dropdown-menu" id="dropdownBox1">
-                                        <li><a href="" style="font-size: 16px;" onclick="getSelectedValue()"><i
+                                        <li id="eat"><a href="" style="font-size: 16px;" onclick="getSelectedValue()"><i
                                                     class="fa fa-cutlery fa-fw"
                                                     style="font-size:16px;color:blue;"></i>
                                                 Eat</a></li>
-                                        <li><a href="#" style="font-size: 16px;" onclick="getSelectedValue()"><i
+                                        <li id="stay"><a href="#" style="font-size: 16px;" onclick="getSelectedValue()"><i
                                                     class="fa fa-building fa-fw"
                                                     style="font-size:16px;color:blue;"></i>
                                                 Stay</a></li>
-                                        <li><a href="#" style="font-size: 16px;" onclick="getSelectedValue()"><i
+                                        <li id="shop"><a href="#" style="font-size: 16px;" onclick="getSelectedValue()"><i
                                                     class="fa fa-shopping-cart fa-fw"
                                                     style="font-size:16px;color:blue;"></i>
                                                 Shop</a></li>
-                                        <li><a href="#" style="font-size: 16px;" onclick="getSelectedValue()"><i
+                                        <li id="visit"><a href="#" style="font-size: 16px;" onclick="getSelectedValue()"><i
                                                     class="fa fa-binoculars fa-fw"
                                                     style="font-size:16px;color:blue;"></i>
                                                 Visit</a></li>
-                                        <li><a href="#" style="font-size: 16px;" onclick="getSelectedValue()"><i
+                                        <li id="fuel"><a href="#" style="font-size: 16px;" onclick="getSelectedValue()"><i
                                                     class="fa fa-tint fa-fw"
                                                     style="font-size:16px;color:blue;"></i>
                                                 Re-fuel</a></li>
