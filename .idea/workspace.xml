@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="44b34e99-700f-46c2-b0d8-e9a6a380939e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/HistoryController.php" afterPath="$PROJECT_DIR$/controller/HistoryController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/Logger.php" afterPath="$PROJECT_DIR$/controller/Logger.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/SignUp.php" afterPath="$PROJECT_DIR$/controller/SignUp.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/data_access/HistoryModel.php" afterPath="$PROJECT_DIR$/model/data_access/HistoryModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/data_access/LoginModel.php" afterPath="$PROJECT_DIR$/model/data_access/LoginModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/data_access/myHistory.js" afterPath="$PROJECT_DIR$/model/data_access/myHistory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/data_access/myPlaces.js" afterPath="$PROJECT_DIR$/model/data_access/myPlaces.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/header.php" afterPath="$PROJECT_DIR$/templates/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/detailedLocation.php" afterPath="$PROJECT_DIR$/view/detailedLocation.php" />
     </list>
     <ignored path="TourGenie.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -491,7 +482,13 @@
       <option name="project" value="LOCAL" />
       <updated>1464535720086</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Saving and history functionalities completed">
+      <created>1464564815669</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1464564815669</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -500,6 +497,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24450952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62776023" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -507,7 +505,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62776023" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -537,7 +534,8 @@
     <MESSAGE value="Login functionality changed ad completed" />
     <MESSAGE value="Autocomplete and searching completed" />
     <MESSAGE value="search functionality changed and updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="search functionality changed and updated" />
+    <MESSAGE value="Saving and history functionalities completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Saving and history functionalities completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -651,6 +649,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -721,6 +720,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5384617">
           <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding>
+            <marker date="1464468143775" expanded="true" signature="347:406" placeholder="INSERT INTO user... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -777,6 +779,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.55689657">
           <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -784,6 +787,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.6153846">
           <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -791,6 +795,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.7307692">
           <caret line="70" column="31" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
+          <folding>
+            <marker date="1464554523266" expanded="true" signature="240:294" placeholder="SELECT * FRO... user" />
+            <marker date="1464554523266" expanded="true" signature="862:913" placeholder="SELECT * FRO... user" />
+            <marker date="1464554523266" expanded="true" signature="1453:1510" placeholder="SELECT user_... user" />
+            <marker date="1464554523266" expanded="true" signature="2024:2084" placeholder="SELECT user_... user" />
+            <marker date="1464554523266" expanded="true" signature="2526:2569" placeholder="SELECT usern... user" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -798,6 +809,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46896553">
           <caret line="37" column="108" selection-start-line="37" selection-start-column="108" selection-end-line="37" selection-end-column="108" />
+          <folding>
+            <marker date="1464554676819" expanded="true" signature="1321:1339" placeholder="..." />
+            <marker date="1464554676819" expanded="true" signature="1791:1809" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
