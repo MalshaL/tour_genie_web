@@ -62,26 +62,16 @@ include '../model/data_access/signUpModel.php';
                                             aria-haspopup="true" aria-expanded="false">Look for places to... <span
                                             class="caret"></span></button>
                                     <ul class="dropdown-menu" id="dropdownBox1">
-                                        <li id="eat"><a href="" style="font-size: 16px;" onclick="getSelectedValue()"><i
-                                                    class="fa fa-cutlery fa-fw"
-                                                    style="font-size:16px;color:blue;"></i>
-                                                Eat</a></li>
-                                        <li id="stay"><a href="#" style="font-size: 16px;" onclick="getSelectedValue()"><i
-                                                    class="fa fa-building fa-fw"
-                                                    style="font-size:16px;color:blue;"></i>
-                                                Stay</a></li>
-                                        <li id="shop"><a href="#" style="font-size: 16px;" onclick="getSelectedValue()"><i
-                                                    class="fa fa-shopping-cart fa-fw"
-                                                    style="font-size:16px;color:blue;"></i>
-                                                Shop</a></li>
-                                        <li id="visit"><a href="#" style="font-size: 16px;" onclick="getSelectedValue()"><i
-                                                    class="fa fa-binoculars fa-fw"
-                                                    style="font-size:16px;color:blue;"></i>
-                                                Visit</a></li>
-                                        <li id="fuel"><a href="#" style="font-size: 16px;" onclick="getSelectedValue()"><i
-                                                    class="fa fa-tint fa-fw"
-                                                    style="font-size:16px;color:blue;"></i>
-                                                Re-fuel</a></li>
+                                        <li id="eat"><a href="#" onclick="getSelectedValue()"><i class="fa fa-cutlery fa-fw" style="color: #2f7ad6"></i> Eat</a></li>
+                                        <li id="stay"><a href="#" onclick="getSelectedValue()"><i class="fa fa-bed fa-fw" style="color: #2f7ad6"></i> Stay</a></li>
+                                        <li id="visit"><a href="#" onclick="getSelectedValue()"><i class="fa fa-camera fa-fw" style="color: #2f7ad6"></i> Sight-seeing</a></li>
+                                        <li id="fun"><a href="#" onclick="getSelectedValue()"><i class="fa fa-music fa-fw" style="color: #2f7ad6"></i> Entertain</a></li>
+                                        <li id="shop"><a href="#" onclick="getSelectedValue()"><i class="fa fa-shopping-cart fa-fw" style="color: #2f7ad6"></i> Shop</a></li>
+                                        <li id="money"><a href="#" onclick="getSelectedValue()"><i class="fa fa-usd fa-fw" style="color: #2f7ad6"></i> Bank</a></li>
+                                        <li id="fuel"><a href="#" onclick="getSelectedValue()"><i class="fa fa-automobile fa-fw" style="color: #2f7ad6"></i> Fuel & repair</a></li>
+                                        <li id="travel"><a href="#" onclick="getSelectedValue()"><i class="fa fa-subway fa-fw" style="color: #2f7ad6"></i> Travel</a></li>
+                                        <li id="health"><a href="#" onclick="getSelectedValue()"><i class="fa fa-medkit fa-fw" style="color: #dd463b"></i> Health</a></li>
+                                        <li id="emergency"><a href="#" onclick="getSelectedValue()"><i class="fa fa-ambulance fa-fw" style="color: #dd463b"></i> Emergency</a></li>
                                     </ul>
                                 </div><!-- /btn-group -->
                             </div><!-- /input-group -->

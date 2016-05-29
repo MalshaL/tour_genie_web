@@ -15,7 +15,7 @@
     include '../model/entity/visitedPlace.php'; ?>
 </head>
 
-<body>
+<body onload="initAutocomplete()">
 <header>
     <?php include '../templates/header.php';
     error_reporting(E_ERROR);

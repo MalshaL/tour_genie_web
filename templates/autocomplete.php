@@ -6,7 +6,6 @@
     function getSelectedValue() {
         $("#dropdownBox1").find("li").click(function () {
             type = this.id;
-            //document.location.href = 'searchResults.php?l=' + mylocation + '&t=' + type + '&lt=' + pos.lat() + '&lg=' + pos.lng();
         });
     }
 
