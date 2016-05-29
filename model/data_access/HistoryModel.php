@@ -16,12 +16,12 @@ function save_visited_place($savedPlace)
     $place_id = $savedPlace->get_place_id();
     $date = $savedPlace->get_date();
 
-    $stmt = $db_conn->prepare("SELECT * FROM user_history WHERE user_id = ? AND place_id = ?");
+    $stmt = $db_conn->prepare("SELECT * FROM user_history WHERE user_id = ? AND place_id = ?");   //check if user has previously visited the place
     $stmt->bind_param("ss", $user_id, $place_id);
     $stmt->execute();
 
     $result = $stmt->get_result();
-    if($result->num_rows==0){
+    if($result->num_rows==0){         //user has not visited this place
         $times = 1;
         $stmt2 = $db_conn->prepare("INSERT INTO user_history (user_id,place_id,date,times_visited) VALUES (?,?,?,?)");
         $stmt2->bind_param("sssi",$user_id,$place_id,$date,$times);
@@ -47,6 +47,20 @@ function remove_history($place){
 
     $stmt = $db_conn->prepare("DELETE FROM user_history WHERE user_id = ? AND place_id =?");
     $stmt->bind_param("ss", $user_id, $place_id);
+    $stmt->execute();
+    $stmt->close();
+
+    DBConnection::close_database_connection($db_conn);
+}
+
+function add_to_places($place)       //add to places table if place does not exist already
+{
+    $db_conn = DBConnection::get_database_connection(); // get the db connection
+
+    $place_id = $place->get_place_id();
+
+    $stmt = $db_conn->prepare("INSERT IGNORE INTO place (place_id) VALUES (?)");
+    $stmt->bind_param("s", $place_id);
     $stmt->execute();
     $stmt->close();
 

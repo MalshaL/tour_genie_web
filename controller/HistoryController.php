@@ -18,4 +18,5 @@ $place->set_place_id($p_id);
 $place->set_user_id($u_id);
 $place->set_date($date);
 
+add_to_places($place);
 save_visited_place($place);

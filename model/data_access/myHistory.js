@@ -30,7 +30,6 @@ function handleHistory() {
     }
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            alert(xmlhttp.responseText);
             arr = xmlhttp.responseText;
             arr = arr.slice(99);
             var response = JSON.parse(arr);
@@ -39,14 +38,10 @@ function handleHistory() {
                 alert("ddddd");
             }
             else {
-                alert("sssssssssssss");
-                alert(response[0].place_id);
                 var ul = document.getElementById("resultListBox");
-                var pos = getLatLng();
-                var position = new google.maps.LatLng(pos);
                 map = new google.maps.Map(document.getElementById('map'), {
-                    center: position,
-                    zoom: 8
+                    center: new google.maps.LatLng(7.2905715,80.63372619),
+                    zoom: 9
                 });
 
                 infowindow = new google.maps.InfoWindow();

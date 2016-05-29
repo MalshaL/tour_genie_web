@@ -4,6 +4,7 @@ session_start();
 if(isset($_SESSION["id"])){
     $user_id = $_SESSION["id"];
     $logged_in = $_SESSION["logged_in"];
+    $username = $_SESSION["username"];
 }?>
 
 <?php
@@ -34,7 +35,7 @@ include '../model/data_access/signUpModel.php';
                     echo '<li><a href="myHistory.php">My History</a></li>';
                     echo '<li><a href="myPlaces.php">My Places</a></li>';
                     echo '<li><a href="myTours.php">My Tours</a></li>';
-                    echo '<li><a href="../controller/logout.php?url=' . $url . '">Log Out</a></li>';
+                    echo '<li><a href="../controller/logout.php?url=' . $url . '">'.$_SESSION['username'].' | Log Out</a></li>';
                 } else {
                     echo '<li style="visibility: hidden" id="u_id">null</li>';
                     echo '<li><a href="#" data-toggle="modal" data-target="#loginModal">Log In</a></li>';

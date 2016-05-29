@@ -17,7 +17,7 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
     save_user($user);
     session_start();
-    $_SESSION["id"] = get_user_id($uname, $pword);
+    $_SESSION["id"] = get_user_id_username($uname, $pword);
     $_SESSION["logged_in"] = true;
 
     $varname = "emailError";

@@ -62,7 +62,7 @@
                         <p id="placeLocationBox"></p>
                     </div>
                     <div class="buttonOptions">
-                        <a href="#" class="btn btn-default" onclick="savePlace()" id="saveBtn"><i
+                        <a href="#" class="btn btn-default" onclick="savePlace2()" id="saveBtn"><i
                                 class="fa fa-bookmark"></i> Save</a>
                     </div>
                     <script>
